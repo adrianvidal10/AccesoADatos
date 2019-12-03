@@ -1,0 +1,8 @@
+Libro1
+Titulo: hacienda
+Autor: ekaitz
+FechaPublicacion: 12/12/2019
+Genero: comedia
+Edicion: 3
+Editorial: santillana
+NumeroDeCopias: 5
