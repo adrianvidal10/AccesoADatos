@@ -10,7 +10,9 @@ public class App {
 	public static void main(String[] args) {
 		
 		int opcion;
-		cargarFichero();
+		cargarFicheroCsv();
+		cargarFicheroTxt();
+		cargarFicheroXml();
 		try {
 			do {
 				System.out.println("BIENVENIDO A LA BIBLIOTECA DE BIDEBARRIETA:");
@@ -38,6 +40,16 @@ public class App {
 		} catch (Exception e) {
 			System.out.println(e);
 		}
+	}
+
+	private static void cargarFicheroXml() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void cargarFicheroTxt() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	private static void generarFicheros() {
@@ -71,7 +83,7 @@ public class App {
 		arraylibros.add(libro);
 	}
 
-	private static void cargarFichero() {
+	private static void cargarFicheroCsv() {
 		      File archivo = null;
 		      FileReader fr = null;
 		      BufferedReader br = null;
@@ -85,14 +97,15 @@ public class App {
 		         linea = br.readLine();
 		         while(linea !=null){
 		        	 palabras = linea.split(",");
-		        	 libro.setTitulo(palabras[0]);
-		        	 libro.setAutor(palabras[1]);
-		        	 libro.setFechapubli(palabras[2]);
-		        	 libro.setGenero(palabras[3]);
-		        	 libro.setEdicion(Integer.parseInt(palabras[4]));
-		        	 libro.setEditorial(palabras[5]);
-		        	 libro.setNcopias(Integer.parseInt(palabras[6]));
-		        	 arraylibros.add(cont, libro);
+		        	 Libro l1 = new Libro();
+		        	 l1.setTitulo(palabras[0]);
+		        	 l1.setAutor(palabras[1]);
+		        	 l1.setFechapubli(palabras[2]);
+		        	 l1.setGenero(palabras[3]);
+		        	 l1.setEdicion(Integer.parseInt(palabras[4]));
+		        	 l1.setEditorial(palabras[5]);
+		        	 l1.setNcopias(Integer.parseInt(palabras[6]));
+		        	 arraylibros.add(cont, l1);
 		        	 cont ++;
 		        	 linea= br.readLine();
 		        	 
