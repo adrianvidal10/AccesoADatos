@@ -1,8 +1,2 @@
-Libro1
-Titulo: hacienda
-Autor: ekaitz
-FechaPublicacion: 12/12/2019
-Genero: comedia
-Edicion: 3
-Editorial: santillana
-NumeroDeCopias: 5
+elefantes amazonicos/alain/15-11-2019/documental/4/elorrieta/6
+geranios espectrales/david/12-01-1533/fantasia/5/lector/1

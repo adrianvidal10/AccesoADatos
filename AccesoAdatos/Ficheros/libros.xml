@@ -1,0 +1,20 @@
+<libros>
+	<libro>
+		<titulo>50 sombras de Alain</titulo>
+		<autor>Alain</autor>
+		<fecha>6/9/1969</fecha>
+		<genero>aventura</genero>
+		<edicion>2</edicion>
+		<editorial>Lenovo</editorial>
+		<ncopias>100</ncopias>
+	</libro>
+	<libro>
+		<titulo>Adrian calvo</titulo>
+		<autor>David</autor>
+		<fecha>05/12/2020</fecha>
+		<genero>+18</genero>
+		<edicion>9</edicion>
+		<editorial>Fina</editorial>
+		<ncopias>78</ncopias>
+	</libro>
+</libros>
