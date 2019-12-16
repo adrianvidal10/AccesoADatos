@@ -64,11 +64,4 @@ public class Libro {
 	public void setEditorial(String editorial) {
 		this.editorial = editorial;
 	}
-
-	@Override
-	public String toString() {
-		return "Libro [edicion=" + edicion + ", ncopias=" + ncopias + ", titulo=" + titulo + ", autor=" + autor
-				+ ", fechapubli=" + fechapubli + ", genero=" + genero + ", editorial=" + editorial + "]";
-	}
-
 }

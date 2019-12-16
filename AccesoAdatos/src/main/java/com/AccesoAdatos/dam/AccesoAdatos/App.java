@@ -13,10 +13,9 @@ public class App {
 		Lectura lectura = new Lectura();
 		Escritura escritura = new Escritura();
 		int opcion;
-		lectura.cargarFicheroCsv();
-		lectura.cargarFicheroTxt();
-		lectura.cargarFicheroXml();
-		biblioteca.getArraylibros();
+		lectura.cargarFicheroCsv(biblioteca);
+		lectura.cargarFicheroTxt(biblioteca);
+		lectura.cargarFicheroDoc(biblioteca);
 		try {
 			do {
 				System.out.println("BIENVENIDO A LA BIBLIOTECA DE BIDEBARRIETA:");
@@ -27,15 +26,15 @@ public class App {
 				opcion = sc.nextInt();
 				switch (opcion) {
 				case 1:
-					escritura.introducirLibro();
+					escritura.introducirLibro(biblioteca);
 					break;
 
 				case 2:
-					escritura.mostrarLibros();
+					escritura.mostrarLibros(biblioteca);
 					break;
 
 				case 3:
-					escritura.generarFicheros();
+					escritura.generarFicheros(biblioteca);
 					break;
 				}
 
